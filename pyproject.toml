@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-logger"
+version = "0.1.0"
+description = "A simple logging utility with file and console output"
+readme = "README.md"
+license = "MIT"
+authors = [
+    {name = "imehighlow", email = "imehighlow@example.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "loguru>=0.7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/imehighlow/simple-logger"
+Repository = "https://github.com/imehighlow/simple-logger"
+Issues = "https://github.com/imehighlow/simple-logger/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+exclude = ["tests*", "examples*", "*.pyc", "__pycache__"]
+
+[tool.setuptools.package-data]
+"*" = ["*.py"]
