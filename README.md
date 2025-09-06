@@ -5,16 +5,7 @@ A simple logging utility with file and console output.
 ## Installation
 
 ```bash
-# Install from PyPI (when published)
-pip install simple-logger
-
-# Install from GitHub
 pip install git+https://github.com/imehighlow/simple-logger.git
-
-# Install from local source
-git clone https://github.com/imehighlow/simple-logger.git
-cd simple-logger
-pip install .
 ```
 
 ## Quick Start
